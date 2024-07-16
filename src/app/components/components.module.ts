@@ -3,11 +3,13 @@ import { AngularMaterialModule } from '../angular-material/angular-material.modu
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { CommonModule } from '@angular/common';
 import { ToAddressPipe } from '../pipes/to-address/to-address.pipe';
+import { ToPhoneNumberPipe } from '../pipes/to-phone-number.pipe';
 
 @NgModule({
   declarations: [
     UserDetailsComponent,
     ToAddressPipe,
+    ToPhoneNumberPipe,
   ],
   imports: [
     AngularMaterialModule,

@@ -6,6 +6,7 @@ import { ToAddressPipe } from '../pipes/to-address/to-address.pipe';
 import { ToPhoneNumberPipe } from '../pipes/to-phone-number.pipe';
 import { FilterComponent } from './filter/filter.component';
 import { FormsModule } from '@angular/forms';
+import { UsersListComponent } from './users-list/users-list.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { FormsModule } from '@angular/forms';
     ToAddressPipe,
     ToPhoneNumberPipe,
     FilterComponent,
+    UsersListComponent,
   ],
   imports: [
     AngularMaterialModule,
@@ -23,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     UserDetailsComponent,
     FilterComponent,
     FormsModule,
+    UsersListComponent,
   ]
 })
 export class ComponentsModule { }

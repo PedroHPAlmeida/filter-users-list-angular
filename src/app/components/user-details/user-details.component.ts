@@ -7,5 +7,5 @@ import { User } from '../../types/user/user.type';
   styleUrl: './user-details.component.scss'
 })
 export class UserDetailsComponent {
-  @Input({ required: true }) user: User | undefined;
+  @Input({ required: true }) user!: User;
 }

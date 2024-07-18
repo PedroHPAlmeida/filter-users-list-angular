@@ -8,5 +8,9 @@ import { UsersList } from './data/users-list';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  users: User[] = UsersList; 
+  selectedUser: User | null = null;
+
+  onUserSelected(user: User) {
+    this.selectedUser = user;
+  }
 }

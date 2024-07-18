@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Address } from '../../types/user/address.type';
+import { Address } from '../types/user/address.type';
 
 @Pipe({
   name: 'toAddress'

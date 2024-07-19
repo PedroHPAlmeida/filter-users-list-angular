@@ -4,7 +4,7 @@
             <span class="mat-h2">Detalhes do Usuário</span>
         </mat-list-item>
         <mat-list-item>
-            <span class="mat-h2">Nome: </span><span class="mat-h3">{{ user.nome }}</span>
+            <span class="mat-h2">Nome: </span><span class="mat-h3">{{ user.nome | toDashIfEmpty }}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
         <mat-list-item>
@@ -24,11 +24,11 @@
         </mat-list-item>
         <mat-divider></mat-divider>
         <mat-list-item>
-            <span class="mat-h2">Função: </span><span class="mat-h3">{{ user.funcao }}</span>
+            <span class="mat-h2">Função: </span><span class="mat-h3">{{ user.funcao | toDashIfEmpty }}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
         <mat-list-item>
-            <span class="mat-h2">Data de Cadastro: </span><span class="mat-h3">{{ user.dataCadastro | date:'dd/MM/yyyy'}}</span>
+            <span class="mat-h2">Data de Cadastro: </span><span class="mat-h3">{{ user.dataCadastro | date:'dd/MM/yyyy' | toDashIfEmpty }}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
     </mat-list>

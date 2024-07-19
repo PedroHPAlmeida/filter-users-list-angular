@@ -3,7 +3,7 @@
         <!-- Coluna nome -->
         <ng-container matColumnDef="name">
             <th mat-header-cell *matHeaderCellDef> Nome </th>
-            <td mat-cell *matCellDef="let user" class="users-list__item" (click)="onUserSelected(user)"> {{ user.nome }}
+            <td mat-cell *matCellDef="let user" class="users-list__item" (click)="onUserSelected(user)"> {{ user.nome | toDashIfEmpty }}
             </td>
         </ng-container>
 
@@ -11,7 +11,7 @@
         <ng-container matColumnDef="date">
             <th mat-header-cell *matHeaderCellDef> Data de Cadastro </th>
             <td mat-cell *matCellDef="let user" class="users-list__item" (click)="onUserSelected(user)"> {{
-                user.dataCadastro | date:'dd/MM/yyyy' }} </td>
+                user.dataCadastro | date:'dd/MM/yyyy' | toDashIfEmpty }} </td>
         </ng-container>
 
         <!-- Coluna status -->

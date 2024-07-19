@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ToAddressPipe } from './to-address.pipe';
 import { ToPhoneNumberPipe } from './to-phone-number.pipe';
+import { StatusPipe } from './status.pipe';
 
 
 
@@ -9,6 +10,7 @@ import { ToPhoneNumberPipe } from './to-phone-number.pipe';
   declarations: [
     ToAddressPipe,
     ToPhoneNumberPipe,
+    StatusPipe,
   ],
   imports: [
     CommonModule
@@ -16,6 +18,7 @@ import { ToPhoneNumberPipe } from './to-phone-number.pipe';
   exports: [
     ToAddressPipe,
     ToPhoneNumberPipe,
+    StatusPipe,
   ]
 })
 export class PipesModule { }
